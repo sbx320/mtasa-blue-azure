@@ -9,7 +9,7 @@ ENV BUILD_BITS 64
 
 # Install dependencies to install the latest gcc
 RUN apt-get update && \
-    apt-get install -y software-properties-common wget node && \
+    apt-get install -y software-properties-common wget && \
     add-apt-repository ppa:ubuntu-toolchain-r/test
 
 # Install latest gcc and libs
