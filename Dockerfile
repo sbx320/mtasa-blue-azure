@@ -24,12 +24,3 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
 # Set build directory
 VOLUME /build
 WORKDIR /build
-
-# Copy entrypoint script
-COPY utils/docker-entrypoint.sh /docker-entrypoint.sh
-
-# Add GLIB compat
-COPY utils/compat /compat
-
-# Set entrypoint
-ENTRYPOINT bash /docker-entrypoint.sh
