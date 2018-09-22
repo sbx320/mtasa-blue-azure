@@ -18,7 +18,7 @@ RUN dpkg --add-architecture i386 && apt-get update && \
         libncursesw5-dev libmysqlclient-dev \
         lib32ncursesw5-dev libncursesw5-dev:i386
 
-RUN curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - &&
+RUN curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - && \
     apt-get install -y nodejs
 
 # Set build directory
